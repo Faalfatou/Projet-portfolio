@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#apropos">Apropos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <h1>Bienvenue sur mon Portfolio personnel</h1>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <img src="./images/reboisement.png" alt="realisation 1">
+                <p>Le reboisement est une opération qui consiste à créer des zones boisées ou des forêts <br>
+                    qui ont été supprimées par coupe rase (ou « coupe à blanc ») <br>
+                     ou détruites par différentes causes dans le passé (surexploitation, feu de forêt, surpâturage, guerre…). <br>
+                     Parfois, il s'agit explicitement de forêts de protection. Le reboisement spontané <br>
+                  désigne le stade terminal de la succession des différentes phases de reconquête forestière.</p>
+            </div>
+            <div class="project">
+                <img src="./images/web_dev.jpeg" alt="realisation 2">
+                <p>Développement Web va de la création de pages Web simples à la création <br>
+                     d'applications Web complexes qui facilitent la vie. <br>
+                     Certains sites Web et applications peuvent sembler simples, <br>
+                     mais ils peuvent être très complexes du point de vue du codage. <br>
+                      Pour cette raison, le développement Web est souvent mieux réalisé par une organisation de développement Web personnalisée.</p>
+            </div>
+        </section>
+        <section id="apropos">
+           <h2>Apropos</h2>
+           <p>Je suis une etudiante en licence 2 MAI a l unchk .
+            Jaime le developpement web mon ambition est de devenir developpeur logiciel dans une entreprise de renommee internationale
+           </p>
+           <h3>Mes Competences</h3>
+             <ol>
+                <li>Programmation C</li>
+                <li>Cablage Reseaux</li>
+                <li>Bureautique</li>
+                <img src="./images/c.png" alt="langage c">
+                <img src="./images/cablage.webp" alt="cablage">
+                <img src="./images/bureautique.jpeg" alt="bureautique">
+             </ol>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
